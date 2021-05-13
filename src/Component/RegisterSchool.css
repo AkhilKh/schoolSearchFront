@@ -1,0 +1,25 @@
+/* .register-form {
+text-align: center;
+margin-top: 50%;
+} */
+
+.class-image {
+    height: 250px;
+    background-image: url("../Images/class.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.label-margin {
+    margin-right: 40px;
+}
+
+.form-center {
+    text-align: center;
+}
+
+.input-bottom-margin {
+    margin-bottom: 10px;
+}

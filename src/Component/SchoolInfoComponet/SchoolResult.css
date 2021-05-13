@@ -1,0 +1,11 @@
+.result_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.result_image {
+    width: 47%;
+    border: solid;
+}

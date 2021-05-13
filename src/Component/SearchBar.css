@@ -1,0 +1,33 @@
+.searchbar-box {
+    display: flex;
+    flex-direction: row;
+padding-top: 10px;
+background-color: #F9F9F9;
+justify-content: center;
+}
+
+.search-input {
+    width: 13%;
+    height: 38px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 17px;
+}
+
+.search-input::placeholder{
+    font-size: 17px;
+    font-style: italic;
+}
+
+.searchbar-button {
+    width: 11%;
+    height: 40px;
+    background-color: #9DD962;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 21px;
+}

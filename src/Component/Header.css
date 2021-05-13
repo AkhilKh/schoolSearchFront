@@ -1,0 +1,29 @@
+.top-header {
+    background-color: #D81919;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-button {
+    background-color: #FFFFFF;
+    font-size: 18px;
+    color: 000000;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0px;
+    padding: 7px 17px;
+    border: none;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+
+}
+
+.popup-modal {
+    
+    width: 30%;
+    background-color: #F9F9F9;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid;
+}
