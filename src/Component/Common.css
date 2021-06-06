@@ -1,3 +1,37 @@
 .h1_font {
     color: crimson;
 }
+
+.mt_0 {
+    margin-top: 0%;
+}
+
+.mt_2_p {
+    margin-top: 2%;
+}
+
+.mr_10 {
+    margin-right: 10px;
+}
+
+.ml_5 {
+    margin-left: 5px;
+}
+
+.mr_5 {
+    margin-right: 5px;
+}
+
+.wd_20 {
+    width: 20px;
+}
+
+.h_20 {
+    height: 20px;
+}
+
+.image_fit {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

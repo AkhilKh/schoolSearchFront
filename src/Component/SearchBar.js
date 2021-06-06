@@ -2,6 +2,7 @@ import './SearchBar.css';
 
 function SearchBar() {
     return (
+    <div>
         <div className="searchbar-box">
             <input
                 type='text'
@@ -18,6 +19,9 @@ function SearchBar() {
                 placeholder="Enter School Name" />
                 <button className="searchbar-button">Search</button>
                         </div>
+                        
+                        </div>
+
     )
 }
 

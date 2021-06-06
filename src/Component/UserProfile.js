@@ -8,7 +8,7 @@ function UserProfile () {
         <div style={{backgroundColor: "#F9F9F9"}}>
             <Header />
         <div className="profile-box">
-                <img className="profile-photo-box" src={logo} alt="" />
+           <div className="profile_photo_box"><div className="photo_div"> <img className="profile_photo" src={logo} alt="" /></div></div> 
             <div className="profile-info-box">
     <label className="user-label">Name</label>
     <input type="text" className="user-input"/>
@@ -45,12 +45,12 @@ function UserProfile () {
     <textarea type="text" className="user-input" />
     <label className="user-label">City</label>
     <input type="text" className="user-input"/>
+
+    <button className="profile-save-button">Save</button>
             </div>
 
         </div>
-        <div style= {{textAlign: "center"}}>
-                    <button className="profile-save-button">Save</button>
-</div>
+                   
         </div>
     )
 

@@ -1,5 +1,5 @@
 .search-component-background {
-    height: 700px;
+    height: 500px;
    background-image: url(../Images/img.jpg);
    background-position: center;
   background-repeat: no-repeat;
@@ -9,11 +9,20 @@
 
 }
 
-.search-fields-box {
+.search_field_div {
   position: absolute;
   top: 40%;
   left: 47%;
   transform: translate(-40%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.search-fields-box {
+  /* position: absolute;
+  top: 40%;
+  left: 47%;
+  transform: translate(-40%, -50%); */
   color: white;
   box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
 
@@ -33,10 +42,10 @@
 }
 
 .search-button {
-    position: absolute;
+    /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   border-radius: 5px;
   width: 200px;
   height: 50px;

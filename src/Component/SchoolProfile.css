@@ -1,10 +1,11 @@
 .school-image {
     height: 300px;
-    background-image: url("../Images/class.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
- 
+}
+
+.cover_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .school-name-box {
@@ -16,21 +17,74 @@
 }
 
 .school-logo {
-    background-image: url("../Images/class.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 180px;
     height: 150px;
     margin-top: -50px;
         border-radius: 0%;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-rows: 50px 50px;
+      grid-template-columns: 10% 70% 20%;
+    grid-gap: 10px;
+  }
+  
+  .item1{
+  grid-row-start: 1; grid-row-end: 3;
+  grid-column-start: 1; grid-column-end: 2;
+  }
+  
+  .item2{
+  grid-row-start: 1; grid-row-end: 2;
+  grid-column-start: 2; grid-column-end: 3;
+  }
+  
+  .item3{
+  justify-content: center;
+  grid-row-start: 1; grid-row-end: 2;
+  grid-column-start: 3; grid-column-end: 4;
+  }
+  
+  .item4{
+  grid-row-start: 2; grid-row-end: 3;
+  grid-column-start: 3; grid-column-end: 4;
+  }
+  
+  .item5{
+  grid-row-start: 2; grid-row-end: 3;
+  grid-column-start: 2; grid-column-end: 3;
+  }
+  
+  .item6{
+  display: flex;
+  flex-direction: row;
+}
+
+.brouchure_button{
+    background-color: #D81919;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0px;
+    padding: 7px 17px;
+    border: none;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+}
+
+
 .school-heading {
     margin-left: 2%;
-    display: flex;
-    flex-direction: column;
-   
+    display: grid;
+    grid-template-areas:
+    'logo heading heading heading heading brochre'
+    'logo heading heading heading heading brochre'
+    'logo inf inf inf inf brochre';
+}
+
+.school_info{
+    margin-right: 10px;
 }
 
 .button-div {

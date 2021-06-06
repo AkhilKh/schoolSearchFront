@@ -1,2 +1,24 @@
+.board_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.board_div > div {
+    margin-right: 9%;
+}
+
+.board_box {
+    width: 130px;
+    height: 130px;
+    border: gray solid;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 1% ;
+
+}
+
+.school_board_img{
+    width: 50%;
+}
 

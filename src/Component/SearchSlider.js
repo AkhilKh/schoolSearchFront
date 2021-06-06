@@ -4,7 +4,8 @@ import './SearchSlider.css';
 function SearchSlider() {
     return (
         <div className='search-component-background'>
-            <div className='search-fields-box'>
+           <div className="search_field_div">
+               <div className='search-fields-box'>
                 <input
                     type='text'
                     className="search-fields"
@@ -19,8 +20,9 @@ function SearchSlider() {
                     style={{ width: "400px" }}
                     placeholder="Enter School Name" />
             </div>
-            <div>
+            <div style={{alignSelf: "center"}} className="mt_2_p">
                 <button className='search-button'>Search</button>
+            </div>
             </div>
         </div>
     )
