@@ -5,8 +5,10 @@ import Home from "./Component/Home";
 import SchoolProfile from "./Component/SchoolProfile";
 import SearchResult from "./Component/SearchResult";
 import UserProfile from "./Component/UserProfile";
-// import SchoolAbout from "./Component/SchoolInfoComponet/SchoolAbout";
-// import SchoolResult from "./Component/SchoolInfoComponet/SchoolResult";
+import SchoolLogin from "./Component/SchoolsData/SchoolLogin";
+import SchoolRegister from "./Component/SchoolsData/SchoolRegister";
+import SchoolPersonalProfile from './Component/SchoolsData/SchoolPersonalProfile';
+
 
 export default class Routes extends Component {
     render() {
@@ -17,8 +19,10 @@ export default class Routes extends Component {
                     <Route path="/SchoolProfile" component={SchoolProfile} />
                     <Route path="/SearchResult" component={SearchResult} />
                     <Route path="/UserProfile" component={UserProfile} />
-                    {/* <Route path="/SchoolAbout" component={SchoolAbout} />
-                    <Route path="/SchoolResult" component={SchoolResult} /> */}
+                    <Route path="/SchoolLogin" component={SchoolLogin} />
+                    <Route path="/SchoolRegister" component={SchoolRegister} />
+                    <Route path="/SchoolPersonalProfile" component={SchoolPersonalProfile} />
+                    
                 </Switch>
             </Router>
         )

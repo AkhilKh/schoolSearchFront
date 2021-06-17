@@ -7,12 +7,13 @@ import RegisterPopup from "./RegisterPopup";
 
 
 const Header = () => {
-    const [LoginPopupModal, SetLoginPopupModal] = useState(false);
+    const [LoginPopupModal, setLoginPopupModal] = useState(false);
     const [SignUpPopupModal, setSignUpPopupModal] = useState(false);
+    const [LoggedUser, setLoggedUser] = useState(true);
 
     /*Open Login Popup*/
     const toggleLoginPopup = () => {
-        SetLoginPopupModal(!LoginPopupModal);
+        setLoginPopupModal(!LoginPopupModal);
     }
 
     /*Open SignUp Popup*/
@@ -20,20 +21,25 @@ const Header = () => {
         setSignUpPopupModal(!SignUpPopupModal);
     }
 
+
+
     return (
         <div>
             <div className="top-header">
-                <button className='header-button' onClick={toggleLoginPopup}>Login</button>
-                <button className='header-button' onClick={toggleSignupPopup}>Register</button>
+                {LoggedUser ?
+                (<div><button className='header-button' onClick={toggleLoginPopup}>Login</button>
+                <button className='header-button' onClick={toggleSignupPopup}>Register</button> </div>) :
+               ( <button className='header-button' >Log Out</button>)}
 
                 {/*Open Login Popup*/}
-                <Modal isOpen={LoginPopupModal} className="popup-modal" >
-                    <LoginPopup />
+                <Modal isOpen={LoginPopupModal}  className="popup-modal"  >
+                    {/* <LoginPopup {...{setLoginPopupModal}} /> */}
+                    <LoginPopup setLoginPopupModal={setLoginPopupModal} setLoggedUser={setLoggedUser}/>
                 </Modal>
-
+ 
                 {/*Open Register Popup*/}
                 <Modal isOpen={SignUpPopupModal} className="popup-modal">
-                    <RegisterPopup />
+                    <RegisterPopup setSignUpPopupModal={setSignUpPopupModal}/>
                 </Modal>
 
 
